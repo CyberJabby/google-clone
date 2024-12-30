@@ -1,0 +1,216 @@
+@mixin hover{
+    box-shadow: 0 2px 4px 0 #20212447;
+}
+@mixin button-hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    border: 1px solid #dadce0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    font-size: 62.5%;
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3rem;
+    }
+}
+header{
+    width: 100%;
+    height: 60px;
+    nav{
+        display: flex;
+        justify-content: end;
+        padding: 4px;
+        .nav-right-section{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+            margin: 0;
+            
+            .images{
+                margin-left: 6px;
+            }
+            li
+            {
+                a{
+                    text-decoration: none;
+                    margin-right: 10px;
+                    color:#000;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+                
+                .learch-labs{
+                    width: 24px;
+                    height: 24px;
+                }
+                img{
+                    margin-left: 8px;
+                    border-radius: 50%;
+                    padding: 4px;
+                    
+                }
+                img:hover{
+                    @include hover();
+                    background: #00000015;
+                }
+            }
+            
+
+        }
+    }
+}
+main{
+    text-align: center;
+    .main-logo-google{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .google-img{
+            width: 375px;
+            height: 150px;
+            
+        }
+
+            .share-img{
+                width: 18px;
+                height: auto;
+                background: #d2d2d24b;
+                padding: 7px;
+                border-radius: 50%;
+                position: relative;
+                left: 200px;
+                bottom: 40px;
+            }
+            .share-img:hover{
+                @include hover();
+                background: #0000003b;
+            }
+        }
+        .main-input{
+            width: 530px;
+            margin: 0 auto;
+            padding-right: 60px;
+            margin-bottom: 20px;
+            .main-input-container{      
+                margin-right: 500px;                                                                                        
+                width: 580px;
+                height: 50px;
+                border-radius: 100px;   
+                background: #d2d2d242;
+                border: 1px solid #d2d2d24b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+                .search-icon{
+                    position: relative;
+                    right: 8px;
+                }
+                .microphone-icon{
+                    margin-right: 10px;
+                }
+                input{
+                    width: 450px;
+                    height: 40px;
+                    border: none;
+                    outline: none;
+                    background: #d2d2d200;
+                    margin-right: 10px;
+                    font-size: 1.8rem;
+                    
+                }
+            }
+            .main-input-container:hover{
+                background: #00000015;
+                border-color:#dfe1e500 ;
+            }
+        }
+        .main-bottons{
+            width: 580px;
+            margin: 0 auto;
+            color: #474747;
+            button{
+                margin: 11px 4px;
+                padding: 0 16px;
+                height: 36px;
+                font-size: 1.4rem;
+                border: none;
+                background-color: #f8f9fa;
+                border-radius: 6px;
+                color: #474747;
+                
+            }
+            .button-one{
+                margin-right: 10px;
+            }
+            .button-one:hover{
+                @include button-hover();
+            }
+
+            .button-two:hover{
+                @include button-hover();
+            }
+            a{
+                color: #1a0dab;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            p{
+                margin-top: 20px;
+            }
+        }
+    }
+footer{
+    background: #f2f2f2;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    .location{
+        border-bottom: 1px solid #47474731;
+        p{
+            padding: 15px 30px;
+            font-size: 1.5rem; 
+            color: #1f1f1f; 
+        }
+    }
+    .information{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 30px;
+        font-size: 1.5rem; 
+        color: #1f1f1f; 
+        ul{
+            display: flex;
+            gap:30px;
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    color: #1f1f1f;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+
+}

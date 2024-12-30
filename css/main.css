@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+}
+header nav {
+  display: flex;
+  justify-content: end;
+  padding: 4px;
+}
+header nav .nav-right-section {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+header nav .nav-right-section .images {
+  margin-left: 6px;
+}
+header nav .nav-right-section li a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #000;
+}
+header nav .nav-right-section li a:hover {
+  text-decoration: underline;
+}
+header nav .nav-right-section li .learch-labs {
+  width: 24px;
+  height: 24px;
+}
+header nav .nav-right-section li img {
+  margin-left: 8px;
+  border-radius: 50%;
+  padding: 4px;
+}
+header nav .nav-right-section li img:hover {
+  box-shadow: 0 2px 4px 0 rgba(32, 33, 36, 0.2784313725);
+  background: rgba(0, 0, 0, 0.0823529412);
+}
+
+main {
+  text-align: center;
+}
+main .main-logo-google {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .main-logo-google .google-img {
+  width: 375px;
+  height: 150px;
+}
+main .main-logo-google .share-img {
+  width: 18px;
+  height: auto;
+  background: rgba(210, 210, 210, 0.2941176471);
+  padding: 7px;
+  border-radius: 50%;
+  position: relative;
+  left: 200px;
+  bottom: 40px;
+}
+main .main-logo-google .share-img:hover {
+  box-shadow: 0 2px 4px 0 rgba(32, 33, 36, 0.2784313725);
+  background: rgba(0, 0, 0, 0.231372549);
+}
+main .main-input {
+  width: 530px;
+  margin: 0 auto;
+  padding-right: 60px;
+  margin-bottom: 20px;
+}
+main .main-input .main-input-container {
+  margin-right: 500px;
+  width: 580px;
+  height: 50px;
+  border-radius: 100px;
+  background: rgba(210, 210, 210, 0.2588235294);
+  border: 1px solid rgba(210, 210, 210, 0.2941176471);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-input .main-input-container img {
+  width: 20px;
+  height: 20px;
+}
+main .main-input .main-input-container .search-icon {
+  position: relative;
+  right: 8px;
+}
+main .main-input .main-input-container .microphone-icon {
+  margin-right: 10px;
+}
+main .main-input .main-input-container input {
+  width: 450px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: rgba(210, 210, 210, 0);
+  margin-right: 10px;
+  font-size: 1.8rem;
+}
+main .main-input .main-input-container:hover {
+  background: rgba(0, 0, 0, 0.0823529412);
+  border-color: rgba(223, 225, 229, 0);
+}
+main .main-bottons {
+  width: 580px;
+  margin: 0 auto;
+  color: #474747;
+}
+main .main-bottons button {
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  font-size: 1.4rem;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  color: #474747;
+}
+main .main-bottons .button-one {
+  margin-right: 10px;
+}
+main .main-bottons .button-one:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+}
+main .main-bottons .button-two:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+}
+main .main-bottons a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+main .main-bottons a:hover {
+  text-decoration: underline;
+}
+main .main-bottons p {
+  margin-top: 20px;
+}
+
+footer {
+  background: #f2f2f2;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+footer .location {
+  border-bottom: 1px solid rgba(71, 71, 71, 0.1921568627);
+}
+footer .location p {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: #1f1f1f;
+}
+footer .information {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: #1f1f1f;
+}
+footer .information ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+footer .information ul li a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+footer .information ul li a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=main.css.map */
